@@ -1,4 +1,4 @@
-package com.dmarcosl.agent.domain;
+package com.dmarcosl.agent.domain.health;
 
 import java.util.List;
 import lombok.Builder;

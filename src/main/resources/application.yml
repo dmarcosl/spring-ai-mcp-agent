@@ -7,11 +7,8 @@ spring:
       api-key: ${OPENAI_API_KEY}
       chat:
         options:
-          model: gpt-5-nano
-          temperature: 1
-#      embedding:
-#        options:
-#          model: text-embedding-3-small
+          model: gpt-4o-mini # yeah, I know, but it's the cheapest model that allows streaming
+          temperature: 0.2
     mcp:
       client:
         type: ASYNC
@@ -21,3 +18,4 @@ spring:
               url: http://sales-mcp:8084/mcp
             stock-mcp:
               url: http://stock-mcp:8085/mcp
+        request-timeout: 30s

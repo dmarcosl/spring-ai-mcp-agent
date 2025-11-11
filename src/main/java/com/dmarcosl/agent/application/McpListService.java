@@ -1,7 +1,7 @@
 package com.dmarcosl.agent.application;
 
-import com.dmarcosl.agent.domain.McpServer;
-import com.dmarcosl.agent.domain.McpTool;
+import com.dmarcosl.agent.domain.health.McpServer;
+import com.dmarcosl.agent.domain.health.McpTool;
 import io.modelcontextprotocol.client.McpAsyncClient;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import reactor.core.publisher.Flux;
 
 @Service
 @AllArgsConstructor
-public class McpClientService {
+public class McpListService {
 
   private final List<McpAsyncClient> clients;
 
